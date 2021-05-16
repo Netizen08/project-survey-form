@@ -3,8 +3,10 @@
 
 }
 body{
-    background-color: white;
-    
+    background-image: url(back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 #container{
     display: flex;
@@ -19,6 +21,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 #title{
     margin:5px 10px;
@@ -52,8 +55,14 @@ body{
     font-size: 15px;
 }
 #submit{
-    margin: 10px;
+    width: 200px;
+    margin: 20px 0 30px 0;
     align-self: center;
+    background-color: teal;
+    font-size: 15px;
+    padding: 10px 5px;
+    color: white;
+    border: none;
 }
 
 @media (max-width:850px) {
