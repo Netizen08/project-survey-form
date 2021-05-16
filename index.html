@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1 id="title">Video Games Survey Form</h1>
+            <p id="description">Tell us about yourself and your video games intrest.</p>
+        </div>
+        <div id="form-conatiner">
+            <form id="survey-form">
+                <div class="form-unit">
+                    <label for="name" id="name-label">Name: </label>
+                    <input type="text" id="name" name="name" required placeholder="Enter Your Name">
+                </div>
+                <div class="form-unit">
+                    <label for="email" id="email-label">E-mail: </label>
+                    <input type="email" id="email" name="email" required placeholder="Enter Your E-mail">
+                </div>
+                <div class="form-unit">
+                    <label for="number" id="number-label">Age: </label>
+                    <input type="number" id="number" name="number" min="10" max="99" placeholder="Age (optional)">
+                </div>
+                <div class="form-unit">
+                    <label for="dropdown">Which of the following describe you the best?</label>
+                    <select id="dropdown" name="gamer-type" required>
+                        <option selected disabled value>Select Your Prefrence</option>
+                        <option value="casual-pc">PC Gamer</option>
+                        <option value="e-sport">Console Gamer</option>
+                        <option value="e-sport">Gamer</option>
+                    </select>
+
+                </div>
+                <div class="form-unit" id="radio_buttons">
+                    <p>How many days you play video in a week?</p>
+                    
+                    <label><input type="radio" value="once" name="user-freq">1</label>
+                    <label><input type="radio" value="2" name="user-freq">2</label>
+                    <label><input type="radio" value="3" name="user-freq">3</label>
+                    <label><input type="radio" value="4" name="user-freq">4</label>
+                    <label><input type="radio" value="5" name="user-freq">5</label>
+                    <label><input type="radio" value="6" name="user-freq">6</label>
+                    <label><input type="radio" value="everyday" name="user-freq" checked>Everyday</label>
+                </div>
+                <div class="form-unit">
+                    <p>What are your favourite categories?</p>
+                    
+                    <label><input type="checkbox" value="action" name="user-freq">Action</label>
+                    <label><input type="checkbox" value="arcade" name="user-freq">Acrade</label>
+                    <label><input type="checkbox" value="Advanture" name="user-freq">Advanture</label>
+                    <label><input type="checkbox" value="Board" name="user-freq">Board</label>
+                    <label><input type="checkbox" value="RPG" name="user-freq">RPG</label>
+                    <label><input type="checkbox" value="Simulation" name="user-freq">Simulation</label>
+                    <label><input type="checkbox" value="everyday" name="user-freq" checked>Shooting</label>
+                </div>
+                <div class="form-unit">
+                    <p>Tell us your favourite games.</p>
+                    <textarea placeholder="Write your games here."></textarea>
+                </div>
+                <div id="submit">
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
